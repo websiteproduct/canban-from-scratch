@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    .col-header {
+        flex: 1;
+        background-color: #eee;
+        margin: 0 15px;
+        border-radius: 4px;
+
+        h3 {
+            color: rgb(63, 63, 63);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .placeholder {
+        padding: 10px;
+        margin: 0 15px 15px 15px;
+        border: 1px dotted #888;
+        font-size: 12px;
+
+        &.has-card {
+            border: 0;
+            padding: 0;
+        }
+
+        &.hovered {
+            border: 1px solid rgba(255, 255, 255, 0);
+            background-color: #fff;
+            border-radius: 4px;
+            transition: background 500ms ease-in-out;
+        }
+    }
+}
+
+.canban-header {
+    padding: 15px;
+}
+
+.card {
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px;
+    cursor: grab;
+
+    &.hide {
+        display: none;
+    }
+
+    &.hold {
+        transform: rotate(5deg);
+        transition: transform 50ms ease-in;
+        cursor: grabbing;
+    }
+}

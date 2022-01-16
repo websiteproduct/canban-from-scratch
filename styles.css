@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.row .col-header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #eee;
+  margin: 0 15px;
+  border-radius: 4px;
+}
+
+.row .col-header h3 {
+  color: #3f3f3f;
+  margin: 0;
+  padding: 0;
+}
+
+.row .placeholder {
+  padding: 10px;
+  margin: 0 15px 15px 15px;
+  border: 1px dotted #888;
+  font-size: 12px;
+}
+
+.row .placeholder.has-card {
+  border: 0;
+  padding: 0;
+}
+
+.row .placeholder.hovered {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.canban-header {
+  padding: 15px;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.card.hide {
+  display: none;
+}
+
+.card.hold {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-transition: -webkit-transform 50ms ease-in;
+  transition: -webkit-transform 50ms ease-in;
+  transition: transform 50ms ease-in;
+  transition: transform 50ms ease-in, -webkit-transform 50ms ease-in;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+/*# sourceMappingURL=styles.css.map */

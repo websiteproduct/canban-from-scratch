@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canban Board (draggable test)</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-header">
+                <div class="canban-header">
+                    <h3>Tasks</h3>
+                </div>
+                <div class="placeholder">
+                    <div class="card" draggable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex esse eos, minima harum consectetur fugit eius! Eveniet, maiores? Ipsa commodi vero quibusdam totam perferendis quis labore, dolore ipsam quasi a aperiam, minus praesentium! Aliquid, esse sunt quisquam earum neque aperiam quaerat harum! Quibusdam dolore ratione quaerat veritatis ab iusto.</div>
+                </div>
+            </div>
+            <div class="col-header in-progress">
+                <div class="canban-header">
+                    <h3>In progress</h3>
+                </div>
+                <div class="placeholder">
+                    Drag a card here
+                </div>
+            </div>
+            <div class="col-header done">
+                <div class="canban-header">
+                    <h3>Done</h3>
+                </div>
+                <div class="placeholder">
+                    Drag a card here
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
